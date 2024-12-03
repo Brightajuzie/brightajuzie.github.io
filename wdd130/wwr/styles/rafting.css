@@ -11,10 +11,9 @@ a  {
   }
   .hero {
     position: relative;
-    background-image: url('your-hero-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;  
+    height: 200px;  
   }
   
   .hero h1,
@@ -25,4 +24,7 @@ a  {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+  }
+  .h2{
+    color:beige;
   }
