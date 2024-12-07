@@ -1,8 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 main{
     max-width: 840px;
 }
 
+main img {
+  float: right;
+}
+
+
 aside{
+    position: relative;
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(000/0.2);  
@@ -11,7 +25,15 @@ aside{
     color: #0b0000da;
     text-align: center;
 }
- 
+aside h2 {
+   
+  position: absolute;
+}
+ /* Class Selectors */
+  .box {
+
+  }
+  
 aside img {
   width: 200px;
   height: auto;
