@@ -3,7 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+nav{
+  display: block;
+  color: rgb(124, 154, 212);
+  text-align: center;
+  padding: 13px 18px;
+  text-decoration: none;
+  
+}
+nav a{
+  text-decoration: none;
+}
+h1{
+ color: aqua;
+}
 
 
 main{
@@ -31,7 +44,7 @@ aside h2 {
 }
  /* Class Selectors */
   .box {
-
+    position: inherit;
   }
   
 aside img {

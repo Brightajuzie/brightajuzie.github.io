@@ -1,6 +1,14 @@
-  
+  *{
+    color:#0F519B;
+  }
 a  {  
   text-decoration: none; 
+}
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 200px;  
 }
 
 .hero img {
@@ -9,12 +17,7 @@ a  {
     height: auto;
     position: relative;
   }
-  .hero {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 200px;  
-  }
+  
   
   .hero h1,
   .hero article {
