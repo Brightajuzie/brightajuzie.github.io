@@ -50,3 +50,12 @@ nav {
   text-align: center;
   padding: 10px;
 }
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+button {
+  margin-top: 1.5rem;
+}
