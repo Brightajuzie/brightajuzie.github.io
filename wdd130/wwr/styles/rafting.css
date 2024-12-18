@@ -13,7 +13,7 @@ header {
   height: auto;
 }
 
-h1 {
+h1, h2 {
   font-size: 2rem;
   font-family: Acme, Arial, sans-serif;
 }
@@ -21,7 +21,9 @@ h1 {
 nav {
   text-align: right;
 }
-
+map{
+   width : 20%;
+}
 .navigation {
   display: flex;
   list-style: none;
