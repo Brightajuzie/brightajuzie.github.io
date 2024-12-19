@@ -1,112 +1,126 @@
+header img {
+  height: 80px;
+  margin-left: 40px;
+}
+
+body {
+  height: 125vh;
+  background-image: url('images/rafting59_600.jpg');
+  background-size: cover;
+  font-family: sans-serif;
+  margin-top: 80px;
+  padding: 30px;
+}
+
+main {
+  color: white;
+}
+
 header {
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 120px 1fr 2fr;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  max-width: 1000px;
-}
-
-.logo img {
-  margin: 0 0.25rem 0 1rem;
-  width: 24px;
-  height: auto;
-}
-map {
-  width: 20%;
-}
-h1, h2 {
-  font-size: 2rem;
-  font-family: Acme, Arial, sans-serif;
-}
-
-nav {
-  text-align: right;
-}
-
-.navigation {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
   display: flex;
-  list-style: none;
+  align-items: center;
 }
 
-.navigation li {
-  flex: 1 1 100%;
+header * {
+  display: inline;
 }
 
-.navigation a {
-  display: block;
-  color: navy;
-  padding: 20px;
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: black;
   text-decoration: none;
 }
-
-.navigation a:hover {
-  color: tomato;
-  font-weight: 700;
-  text-decoration: underline;
+.hero {
+background-image: url('images/rafting64_600.jpg');
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.footer {
-  background-color: #F1F1F1;
+.hero-content {
   text-align: center;
-  padding: 10px;
+  color: #fff;
+  /* Or a suitable color for contrast */
+  z-index: 1;
+  /* Ensure text is on top of the image */
 }
-.footer-container {
-    background-color: #95AAB6;
-    display: flex;
-  }
-.footer-container a {
-    color: #F5F6F7;
-    padding: 42px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: medium;
-  }
-.footer img {
-  size: 15px;
- 
-  width: 15px;
-  height: auto;
+
+
+
+.contact-info {
+  margin-bottom: 2rem;
 }
-.footer-left {
-    margin-right: auto
-  }
 
-.fa:hover {
-    color: #45405F;
-  }
+.team {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
 
-.footer-icons {
-    justify-content: space-between;
-    padding: 16px 64px 0px 0px
-  }
+.team-member {
+  text-align: center;
+}
 
-.footer-icons ul {
-    list-style-type: none;
-  }
+.team-member img {
+  max-width: 150px;
+  border-radius: 50%;
+}
 
-.footer-icons li {
-    display: inline-block;
-  }
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-.footer-right {
-    margin-left: auto
-  }
-
-.copyright {
-    background-color: #F5F6F7;
-    overflow: hidden;
-  }
-   
-
-
-label {
+.contact-form label {
   display: block;
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-button {
-  margin-top: 1.5rem;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Optional: Add a class for better reusability */
+.centered {
+  text-align: center;
+}
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
