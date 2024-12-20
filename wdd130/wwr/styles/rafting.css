@@ -2,7 +2,8 @@
 
 body {
   height: 125vh;
-  background-image: url('/wdd130/wwr/images/rafting33_600.jpg');
+  /*background-image: url('/wdd130/wwr/images/rafting33_600.jpg');*/
+  background-color: #a7c8ee;
   background-size: cover;
   font-family: sans-serif;
   margin-top: 80px;
@@ -41,7 +42,7 @@ header li a {
   text-decoration: none;
 }
 .hero {
-background-image: url('/wdd130/wwr/images/rafting64_600.jpg');
+/*background-image: url('/wdd130/wwr/images/rafting64_600.jpg');
   /* Replace with your image path */
   background-size: cover;
   background-position: center;
