@@ -20,7 +20,7 @@ modeButton.addEventListener("click", () => {
 		main.style.color = "#000";
 		modeButton.textContent = "🕶️";
 	}
-});                                                                                                                                                                                                                                                                                                                     querySelector(".visits");
+});                                                                                                                                                                                                                                                                                           querySelector(".visits");
 
  
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
