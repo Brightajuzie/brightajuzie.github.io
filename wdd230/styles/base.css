@@ -6,51 +6,54 @@
 
 body {
     font-family: Roboto, sans-serif;
-    
 }
-header,main,footer
- {
-    
+
+header,
+main,
+footer {
     margin: 1rem auto;
-    
     padding: 1rem;
     background-color: #e5f1fe;
-    grid-template-columns:1fr 1fr;
-    margin: 0;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	 
-	
-	 
-	color: #000;
-
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #000;
 }
+
 main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
-.hero{
+
+.hero {
     height: auto;
+    position: relative;
+    /* Needed for absolute positioning of .herolabel */
 }
+
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
+    /* To prevent extra space below the image */
 }
+
 .herolabel {
     position: absolute;
-    top: 300px;
-    left: 80px;
+    top: 30px;
+    /* Adjusted from 300px for better visibility */
+    left: 30px;
+    /* Adjusted from 80px for better visibility */
     background: radial-gradient(#fff, #4D5B97);
-    border: 1px solid rgba(0, 0, 0, .75);
+    border: 1px solid rgba(0, 0, 0, 0.75);
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
-    /* Buenas */
+    /* Buenas - This comment is in Spanish and doesn't affect the CSS */
 }
 
 .herolabel p {
     margin: 0;
-    padding: .25rem;
+    padding: 0.25rem;
     font-weight: 700;
     font-size: 1.5rem;
     font-family: "Great Vibes", serif;
@@ -66,7 +69,7 @@ h1 {
 }
 
 .parent {
-    margin: 1rem
+    margin: 1rem;
 }
 
 .parent section {
@@ -79,18 +82,17 @@ h1 {
 
 .parent span {
     background-color: #e8f1f3;
-    color: #fff;
+    color: #333;
+    /* Changed to a darker color for better visibility */
     display: block;
     text-align: center;
-    padding: 75rem 0;
-
+    padding: 1rem 0;
+    /* Adjusted padding to a reasonable value */
 }
 
 .parent p {
     padding: 10px;
 }
-
-
 
 /* Mobile View ***************/
 #menu {
@@ -98,7 +100,7 @@ h1 {
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    padding: .5rem .75rem;
+    padding: 0.5rem 0.75rem;
     background-color: #eee;
     color: #000;
 }
@@ -133,7 +135,8 @@ nav {
 }
 
 .navigation a:hover,
-navigation a:active {
+.navigation a:active {
+    /* Corrected selector */
     color: white;
     background-color: black;
 }
@@ -145,10 +148,7 @@ navigation a:active {
 #menu.show::before {
     content: "X";
 }
-/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
 
-In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
-*/
 @media only screen and (min-width: 40em) {
     .navigation {
         display: flex;
@@ -156,7 +156,6 @@ In most WDD courses there is a requirement to use a separate file. This part wou
 
     .navigation li {
         display: block;
-        /* change state in small view */
         flex: 1 1 100%;
     }
 
