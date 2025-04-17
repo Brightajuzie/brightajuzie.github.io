@@ -5,20 +5,18 @@ async function getLinks() {
     const response = await fetch(linksURL);
     if (response.ok) {
       const data = await response.json();
-      // console.log(data); // Test the JSON data
+      
       displayLinks(data);
     } else {
       throw Error(await response.text());
     }
   } catch (error) {
-    console.error("Error fetching links:", error);
+     ;
   }
 }
 
 function displayLinks(data) {
-  const learningActivities = document.querySelector(".card h2").parentNode; // Assuming your "WDD Learning Activities" h2 is inside the section you want to replace
-
-  // Clear the existing content of the learning activities section
+  const learningActivities = document.querySelector(".card h2").parentNode;  
   learningActivities.innerHTML = '';
 
   data.weeks.forEach(weekData => {
