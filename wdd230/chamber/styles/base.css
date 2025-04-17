@@ -143,6 +143,73 @@ h1 {
     font-size: 2rem;
 }
 
+/* Styles for the directory page */
+#view-toggle {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+}
+
+#view-toggle button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1em;
+    text-align: center;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.member-card h2 {
+    margin-top: 0;
+}
+
+.cards.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards.list .member-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding: 0.5em 0;
+}
+
+.cards.list .member-card:last-child {
+    border-bottom: none;
+}
+
+.cards.list .member-card img {
+    max-width: 100px;
+    margin-right: 1em;
+}
+
+.cards.list .member-card>* {
+    margin: 0.25em 0;
+}
+
+.cards.list .member-card a {
+    margin-left: auto;
+}
+
+
+
 .parent {
     margin: 1rem
 }
